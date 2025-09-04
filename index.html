@@ -213,6 +213,31 @@
         max-width: 100%;
       }
     }
+    .courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.course-btn {
+  display: block;
+  background-color: var(--main-orange);
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+  border-radius: 10px;
+  font-weight: bold;
+  text-align: center;
+  transition: transform 0.2s, background-color 0.3s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.course-btn:hover {
+  background-color: var(--main-yellow);
+  color: var(--text-color);
+  transform: translateY(-3px);
+}
   </style>
 </head>
 <body>
@@ -352,19 +377,37 @@
     <h2>Професійна підтримка педагогів</h2>
   </section>
   <div class="subsection">
-    <h3>Підвищення кваліфікації</h3>
-    <ul>
-      <li><a href="https://hryoutest.in.ua/category-course/programa-pidvishchennya-kvalifikaciji-psihologichnoji-pidtrimki-dlya-osvityan-ta-batkiv" target="_blank">«Перша психологічна допомога учасникам освітнього процесу під час та після завершення воєнних дій»</a></li>
-      <li><a href="https://study.ed-era.com/uk/courses/course/6788" target="_blank">«Основи психопідтримки: як вчителям працювати з дітьми, які пережили травматичні»</a></li>
-      <li><a href="https://study.ed-era.com/uk/courses/course/1762" target="_blank">«Сміливі навчати» Онлайн-курс про вчителювання у час кризи</a></li>
-      <li><a href="https://study.ed-era.com/uk/courses/course/636" target="_blank">«Безпечний простір» Онлайн-курс про організацію безпечного психосоціального освітнього простору для вчителів і дітей, створений на основі матеріалів-посібників за рекомендаціями МОН</a></li>
-      <li><a href="https://prometheus.org.ua/prometheus-free/trauma-informed-early-child-development/" target="_blank">«Травмообізнані:вплив травми на розвиток дітей раннього віку»</a></li>
-      <li><a href="https://prometheus.org.ua/prometheus-free/learning-quality-sel-psychosocial-support/" target="_blank">«Я І ЯКІСНЕ ТА ЦІЛІСНЕ НАВЧАННЯ. Соціально-емоційне навчання і психосоціальна підтримка»</a></li>
-      <li><a href="https://prometheus.org.ua/prometheus-free/child-safety-and-wellbeing/" target="_blank">«Благополуччя та захист дітей»</a></li>
-      <li><a href="https://prometheus.org.ua/prometheus-free/stress-management-for-educators/" target="_blank">«Стрес-менеджмент для освітян»</a></li>
-      <li><a href="https://prometheus.org.ua/prometheus-free/protydiya-bulingu-v-osviti/" target="_blank">«Протидія та попередження булінгу (цькуванню) в закладах освіти»</a></li>
-    </ul>
+  <h3>Підвищення кваліфікації</h3>
+  <div class="courses-grid">
+    <a href="https://hryoutest.in.ua/category-course/programa-pidvishchennya-kvalifikaciji-psihologichnoji-pidtrimki-dlya-osvityan-ta-batkiv" target="_blank" class="course-btn">
+      Перша психологічна допомога учасникам освітнього процесу під час та після завершення воєнних дій
+    </a>
+    <a href="https://study.ed-era.com/uk/courses/course/6788" target="_blank" class="course-btn">
+      Основи психопідтримки: як вчителям працювати з дітьми, які пережили травматичні події
+    </a>
+    <a href="https://study.ed-era.com/uk/courses/course/1762" target="_blank" class="course-btn">
+      «Сміливі навчати» Онлайн-курс про вчителювання у час кризи
+    </a>
+    <a href="https://study.ed-era.com/uk/courses/course/636" target="_blank" class="course-btn">
+      «Безпечний простір» — організація психосоціально безпечного середовища
+    </a>
+    <a href="https://prometheus.org.ua/prometheus-free/trauma-informed-early-child-development/" target="_blank" class="course-btn">
+      Травмообізнані: вплив травми на розвиток дітей раннього віку
+    </a>
+    <a href="https://prometheus.org.ua/prometheus-free/learning-quality-sel-psychosocial-support/" target="_blank" class="course-btn">
+      Я і якісне та цілісне навчання. Соціально-емоційне навчання і підтримка
+    </a>
+    <a href="https://prometheus.org.ua/prometheus-free/child-safety-and-wellbeing/" target="_blank" class="course-btn">
+      Благополуччя та захист дітей
+    </a>
+    <a href="https://prometheus.org.ua/prometheus-free/stress-management-for-educators/" target="_blank" class="course-btn">
+      Стрес-менеджмент для освітян
+    </a>
+    <a href="https://prometheus.org.ua/prometheus-free/protydiya-bulingu-v-osviti/" target="_blank" class="course-btn">
+      Протидія та попередження булінгу (цькування) в закладах освіти
+    </a>
   </div>
+</div>
 </section>
 
   <section id="contacts">
