@@ -213,9 +213,9 @@
         max-width: 100%;
       }
     }
-    .courses-grid {
+  .courses-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(2, 1fr); /* 2 картки в ряд */
   gap: 1.5rem;
   margin-top: 1.5rem;
 }
@@ -227,7 +227,8 @@
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .course-card:hover {
@@ -235,29 +236,10 @@
   box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
-/* Контейнер для зображення */
-.course-card .img-wrapper {
-  width: 100%;
-  height: 180px; /* однакова висота для всіх картинок */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #f9f9f9;
-}
-
 .course-card img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain; /* картинка не обрізається */
-}
-
-.course-card p {
-  flex-grow: 1;
-  padding: 1rem;
-  font-size: 0.95rem;
-  line-height: 1.4;
-  text-align: center;
-  color: #333;
+  width: 100%;
+  height: auto; /* щоб картинки не обрізались */
+  display: block;
 }
 
   </style>
@@ -399,52 +381,33 @@
   <h2>Підвищення кваліфікації</h2>
   <div class="card">
     <div class="courses-grid">
-
-      <a href="https://hryoutest.in.ua/category-course/programa-pidvishchennya-kvalifikaciji-psihologichnoji-pidtrimki-dlya-osvityan-ta-batkiv" target="_blank" class="course-card">
-        <img src="images/course1.png" alt="Перша психологічна допомога" />
-        <p>Перша психологічна допомога учасникам освітнього процесу під час та після завершення воєнних дій</p>
+      <a class="course-card" href="https://hryoutest.in.ua/category-course/programa-pidvishchennya-kvalifikaciji-psihologichnoji-pidtrimki-dlya-osvityan-ta-batkiv" target="_blank">
+        <img src="images/course1.png" alt="Курс 1">
       </a>
-
-      <a href="https://study.ed-era.com/uk/courses/course/6788" target="_blank" class="course-card">
-        <img src="images/course2.png" alt="Основи психопідтримки" />
-        <p>Основи психопідтримки: як вчителям працювати з дітьми, які пережили травматичні події</p>
+      <a class="course-card" href="https://study.ed-era.com/uk/courses/course/6788" target="_blank">
+        <img src="images/course2.png" alt="Курс 2">
       </a>
-
-      <a href="https://study.ed-era.com/uk/courses/course/1762" target="_blank" class="course-card">
-        <img src="images/course3.png" alt="Сміливі навчати" />
-        <p>«Сміливі навчати» Онлайн-курс про вчителювання у час кризи</p>
+      <a class="course-card" href="https://study.ed-era.com/uk/courses/course/1762" target="_blank">
+        <img src="images/course3.png" alt="Курс 3">
       </a>
-
-      <a href="https://study.ed-era.com/uk/courses/course/636" target="_blank" class="course-card">
-        <img src="images/course4.png" alt="Безпечний простір" />
-        <p>«Безпечний простір» — організація психосоціально безпечного середовища</p>
+      <a class="course-card" href="https://study.ed-era.com/uk/courses/course/636" target="_blank">
+        <img src="images/course4.png" alt="Курс 4">
       </a>
-
-      <a href="https://prometheus.org.ua/prometheus-free/trauma-informed-early-child-development/" target="_blank" class="course-card">
-        <img src="images/course5.png" alt="Травмообізнані" />
-        <p>Травмообізнані: вплив травми на розвиток дітей раннього віку</p>
+      <a class="course-card" href="https://prometheus.org.ua/prometheus-free/trauma-informed-early-child-development/" target="_blank">
+        <img src="images/course5.png" alt="Курс 5">
       </a>
-
-      <a href="https://prometheus.org.ua/prometheus-free/learning-quality-sel-psychosocial-support/" target="_blank" class="course-card">
-        <img src="images/course6.png" alt="Я і якісне навчання" />
-        <p>Я і якісне та цілісне навчання. Соціально-емоційне навчання і підтримка</p>
+      <a class="course-card" href="https://prometheus.org.ua/prometheus-free/learning-quality-sel-psychosocial-support/" target="_blank">
+        <img src="images/course6.png" alt="Курс 6">
       </a>
-
-      <a href="https://prometheus.org.ua/prometheus-free/child-safety-and-wellbeing/" target="_blank" class="course-card">
-        <img src="images/course7.png" alt="Захист дітей" />
-        <p>Благополуччя та захист дітей</p>
+      <a class="course-card" href="https://prometheus.org.ua/prometheus-free/child-safety-and-wellbeing/" target="_blank">
+        <img src="images/course7.png" alt="Курс 7">
       </a>
-
-      <a href="https://prometheus.org.ua/prometheus-free/stress-management-for-educators/" target="_blank" class="course-card">
-        <img src="images/course8.png" alt="Стрес-менеджмент" />
-        <p>Стрес-менеджмент для освітян</p>
+      <a class="course-card" href="https://prometheus.org.ua/prometheus-free/stress-management-for-educators/" target="_blank">
+        <img src="images/course8.png" alt="Курс 8">
       </a>
-
-      <a href="https://prometheus.org.ua/prometheus-free/protydiya-bulingu-v-osviti/" target="_blank" class="course-card">
-        <img src="images/course9.png" alt="Попередження булінгу" />
-        <p>Протидія та попередження булінгу (цькування) в закладах освіти</p>
+      <a class="course-card" href="https://prometheus.org.ua/prometheus-free/protydiya-bulingu-v-osviti//" target="_blank">
+        <img src="images/course9.png" alt="Курс 9">
       </a>
-
     </div>
   </div>
 </section>
